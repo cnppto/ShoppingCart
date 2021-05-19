@@ -38,7 +38,7 @@ if(empty($_SESSION["shopping_cart"])) {
 
 <head>
     <title>COOKIES SHOP</title>
-    <link rel='stylesheet' href='style.css' />
+    <link rel='stylesheet' href='styl.css' />
 </head>
 
 <body>

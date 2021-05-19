@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>COOKIES SHOP</title>
-    <link rel='stylesheet' href='style.css' />
+    <link rel='stylesheet' href='styl.css' />
 </head>
 
 <body>
@@ -39,11 +39,11 @@ $cart_count = count(array_keys($_SESSION["shopping_cart"]));
             
             <label for="name">ชื่อสินค้า:</label><br>
             <input type="text" class='name' id="name" name ="name" ></input><br><br>
-            <label for="code">รหัสสินค้า:</label><br>
+            <label for="code">เลขรหัสสินค้า:</label><br>
             <input type="number" class='code' id="code" name ="code" min ="0"></input><br><br>
-            <label for="price">ราคา:</label><br>
+            <label for="price">ราคาของสินค้า:</label><br>
             <input type="number" class='price' id="price" name ="price" min ="0"></input><br><br>
-            <label for="image">รูปสินค้า</label><br>
+            <label for="image">รูปภาพสินค้า</label><br>
             <input type="file" class='image' id="image" name ="image" ></input><br><br>
             
             <button type="submit" value="submit" class='add' name="submit">เพิ่มสินค้า</button>

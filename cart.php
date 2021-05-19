@@ -29,7 +29,7 @@ if (isset($_POST['action']) && $_POST['action']=="change"){
 
 <head>
 <title>COOKIES SHOP</title>
-    <link rel='stylesheet' href='style.css' />
+    <link rel='stylesheet' href='styl.css' />
 </head>
 
 <body>
@@ -70,7 +70,7 @@ if(isset($_SESSION["shopping_cart"])){
 	$net_amount = 0;
 	
 ?>
-            <table class="table">
+            <table class="table" >
                 <tbody>
                     <tr>
                         <td></td>
