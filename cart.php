@@ -29,12 +29,12 @@ if (isset($_POST['action']) && $_POST['action']=="change"){
 
 <head>
 <title>COOKIES SHOP</title>
-    <link rel='stylesheet' href='styl.css' />
+    <link rel='stylesheet' href='sty.css' />
 </head>
 
 <body>
 	<!-- <div style="width:700px; margin:50 auto;"> -->
-	<br><br><h1>COOKIES SHOP</h1><br><br>
+	<br><h1>COOKIES SHOP</h1><br>
 
         <div class="bar_div">
             <li><a onclick="parent.location.href='index.php'">หน้าหลัก</a></li>
@@ -73,19 +73,19 @@ if(isset($_SESSION["shopping_cart"])){
             <table class="table" >
                 <tbody>
                     <tr>
-                        <td></td>
-                        <td>ชื่อสินค้า</td>
-                        <td>จำนวน</td>
-                        <td>ราคาต่อหน่วย</td>
-                        <td>ราคาทั้งหมด</td>
-                        <td>ส่วนลด</td>
+                        <td> </td>
+                        <td style= "font-weight:bold;">ชื่อสินค้า   </td>
+                        <td style= "font-weight:bold;">จำนวน</td>
+                        <td style= "font-weight:bold;">ราคาต่อหน่วย</td>
+                        <td style= "font-weight:bold;">ราคาทั้งหมด</td>
+                        <td style= "font-weight:bold;">ส่วนลด</td>
                     </tr>
                     <?php		
 foreach ($_SESSION["shopping_cart"] as $product){
 ?>
                     <tr>
-                        <td><img src='<?php echo $product["image"]; ?>' width="50" height="40" /></td>
-                        <td><?php echo $product["name"]; ?><br />
+                        <td><img src='<?php echo $product["image"]; ?>' width="60" height="45" /></td><br>
+                        <td style="font-size: 18px; "><br><?php echo $product["name"]; ?><br>
                             <form method='post' action=''>
                                 <input type='hidden' name='code' value="<?php echo $product["code"]; ?>" />
                                 <input type='hidden' name='action' value="remove" />
@@ -95,9 +95,8 @@ foreach ($_SESSION["shopping_cart"] as $product){
                         <td>
                             <form method='post' action=''>
                                 <input type='hidden' name='code' value="<?php echo $product["code"]; ?>" />
-                                <input type='hidden' name='action' value="change" /><br><br>
+                                <input type='hidden' name='action' value="change" /><br>
                                 <input type="number" id="quantity" name="quantity" min="1" max="99" value="<?php echo $product["quantity"]; ?>" onchange="this.form.submit()">
-                                <br><br>
                             </form>
                         </td>
                         <td><?php echo $product["price"]." บาท"; ?></td>
@@ -143,7 +142,7 @@ $net_amount += ($product["price"]*$product["quantity"])-$discount;
 } 
 // print_r($_SESSION);
 ?>
-            <div class="back_div">
+            <div class="back_div" >
                 <button type='submit' class='back' onclick="parent.location.href='index.php'">ย้อนกลับ</button>
             </div>
 

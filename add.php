@@ -1,13 +1,16 @@
-<?php include('db.php');?>
+<?php include('db.php');
+ session_start();
+
+ ?>
 <html>
 <head>
 <title>COOKIES SHOP</title>
-    <link rel='stylesheet' href='styl.css' />
+    <link rel='stylesheet' href='sty.css' />
 </head>
 
 <body>
 	<!-- <div style="width:700px; margin:50 auto;"> -->
-	<br><br><h1>COOKIES SHOP</h1><br><br>
+	<br><h1>COOKIES SHOP</h1><br>
 
     <div class="bar_div">
         <li><a onclick="parent.location.href='index.php'">หน้าหลัก</a></li>

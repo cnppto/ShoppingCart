@@ -41,8 +41,8 @@
 	cursor:pointer;
 	}
 .product_wrapper .image img{
-    width: 282px;
-    height: 190px;
+    width: 314px;
+    height: 200px;
 
     }
 .product_wrapper .name {
@@ -68,7 +68,7 @@
 
 .table td {
 	border-bottom: #F0F0F0 1px solid;
-	padding: 10px;
+	padding: 15px;
 	}
 
 
@@ -106,7 +106,7 @@
     text-align: center;
 	}
 .cart{
-    width:700px; 
+    width:750px; 
     margin:50 auto;  
 }
 .cart .remove {
@@ -114,6 +114,8 @@
     border: none;
     color: #b41813;
     cursor: pointer;
+    font-size: 13px;
+    font-weight:bold;
     padding: 0px;
 	}
 .cart .remove:hover {
@@ -129,6 +131,8 @@
     border: none;
     color: #0067ab;
     cursor: pointer;
+	font-size: 15px;
+    font-weight:bold;
     padding: 0px;
 }
 .back_div .back:hover {
